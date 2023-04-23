@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,300;1,100;1,200&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    background-color: bisque;
+    width: 15vw;
+    font-family: 'Ysabeau', sans-serif;
+    height: 100vh;
+}
+.sidebar nav{
+    padding: 45px;
+}
+
+.sidebar nav li{
+    list-style-type: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+.main{
+    background-color: aqua;
+    width: 90vw;
+}
+
+.container{
+    display : flex;
+}
+.infocontainer{
+    background-color: rgb(26, 139, 101);
+    height: 78vh;
+    width: 70vw;
+    margin: 73px auto;
+    justify-content: space-around;
+    display: flex;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.devPic img{
+    width: 388px;
+    /*-webkit-filter: blur(5px); Safari 6.0 - 9.0 
+    /*filter: blur(5px);*/
+      
+}
+.devPic :hover{
+
+        /* Start the vibrate animation with duration 0.5 seconds */
+        animation: vibrate 0.5s;
+      
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+}
+@keyframes vibrate {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-1deg); }
+    20% { transform: rotate(1deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-1deg); }
+    80% { transform: rotate(1deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(-1deg); }
+  }
+
+
